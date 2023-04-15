@@ -38,6 +38,7 @@ function App({currentUser}) {
       </Box>
     </Container>
     <BrowserRouter>
+    <Header currentUser={currentUser}/>
     <Navbar currentUser={currentUser}/>
   <Routes>
     <Route path="/" exact element={<Home/>}/>

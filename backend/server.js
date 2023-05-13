@@ -62,6 +62,10 @@ app.get("/", function (req, res) {
 });
 
 //start server
+app.listen(port, (err) => {
+  if (err) console.log(err);
+  console.log('server started at port',port);
+});
 io.on("connection", sockets);
 httpServer.listen(port, (err) => {
   if (err) console.log(err);
